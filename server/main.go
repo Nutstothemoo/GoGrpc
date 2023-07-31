@@ -16,7 +16,7 @@ type helloserver struct {
 }
 
 func main() {
-	// Start the server
+
 	lis, err := net.Listen("tcp", port)
 	if err != nil {
 		log.Fatalf("Failed to listen on port %v: %v", port, err)

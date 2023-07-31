@@ -1,4 +1,4 @@
-module GoGrpc
+module github.com/Nutstothemoo/GoGrpc
 
 go 1.20
 
