@@ -15,6 +15,7 @@ type helloserver struct {
 	pb.GreetServiceServer
 }
 
+
 func main() {
 
 	lis, err := net.Listen("tcp", port)
@@ -27,4 +28,5 @@ func main() {
 	if err := grpcServer.Serve(lis); err != nil {
 		log.Fatalf("Failed to serve gRPC server over port %v: %v", port, err)
 	}
+
 }
