@@ -28,6 +28,7 @@ func callHelloBidirectionalStreamingClient(client pb.GreetServiceClient, names *
 			}
 			log.Println("Received: ", message.Message)
 		}
+		close(waitchannel)
 	}()
 	for _, name := range names.Names {
 		req:= &pb.HelloRequest{
